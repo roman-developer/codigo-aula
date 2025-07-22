@@ -1,0 +1,11 @@
+# Compiled files
+*.o
+*.out
+*.exe
+
+# Temp files
+*~
+*.log
+
+# System folders
+.DS_Store
