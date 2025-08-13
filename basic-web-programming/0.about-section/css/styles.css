@@ -1,0 +1,80 @@
+/* ====== Variables de color y tipografía ====== */
+:root{
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --primary: #0b5cab;   /* azul profesional */
+  --accent: #e9f2fb;    /* fondo suave */
+}
+
+/* ====== Reset/normalización ligera ====== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* ====== Base ====== */
+body{
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container{
+  width: min(90%, 960px);
+  margin-inline: auto;
+}
+
+/* ====== Cabecera ====== */
+.site-header{
+  border-bottom: 4px solid var(--primary);
+  background: var(--accent);
+  padding: 1rem 0;
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo{ height: 48px; width: auto; }
+.site-title{
+  font-size: 1.9rem;
+  margin: 0;
+  color: var(--primary);
+}
+
+/* ====== Secciones ====== */
+h2{ margin: 1.25rem 0 0.5rem; line-height: 1.2; }
+
+.about p{ margin: 0.5rem 0 1rem; }
+
+.team{ margin: 1rem 0; }
+.team img{ border-radius: 8px; }
+.team figcaption{
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+/* ====== Servicios ====== */
+.service-list{
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 2rem;
+}
+.service-list li{ margin: 0.25rem 0; }
+
+/* ====== Pie ====== */
+.site-footer{
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 480px){
+  .site-title{ font-size: 1.6rem; }
+  .logo{ height: 40px; }
+}
