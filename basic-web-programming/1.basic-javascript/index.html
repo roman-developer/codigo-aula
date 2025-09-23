@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Contador en Javascript</h2>
+
+    <p>Número de clicks: <span id="counter">0</span></p>
+
+    <button type="button" onclick="incrementCounter()">¡Haz click aquí!</button>
+    <button type="button" onclick="resetCounter()">¡Borrar clicks!</button>
+
+    <script>
+      let count = 0;
+
+      function incrementCounter() {
+        count++;
+        document.getElementById("counter").innerHTML = count;
+      }
+
+      function resetCounter(){
+        document.getElementById("counter").innerHTML = 0;
+      }
+    </script>
+  </body>
+</html>
+
