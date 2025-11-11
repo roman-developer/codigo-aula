@@ -1,5 +1,17 @@
-//C++ is an object-oriented programming language.
+// C++ is an object-oriented programming language (OOP).
 // Everything in C++ is associated with classes and objects, along with its attributes and methods.
+
+/**  This is a OOP example, using the class ArithmeticOperations:
+ * Private:
+ *  - op1: first operator
+ *  - op2: second operator
+ * Public:
+ * + constructor
+ * + sumOp: implement addition 
+ * + subsOp: implement substraction 
+ * + multiplyOp: implement multiplication 
+ * + divideOp: implement division 
+*/
 
 #include <iostream>
 using namespace std;
